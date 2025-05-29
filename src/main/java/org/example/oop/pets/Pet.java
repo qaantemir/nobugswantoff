@@ -1,4 +1,7 @@
 package org.example.oop.pets;
 
-public class Pet {
+public abstract class Pet {
+
+    public abstract void doAction();
+    public abstract void feed();
 }

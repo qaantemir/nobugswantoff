@@ -1,4 +1,13 @@
 package org.example.oop.pets;
 
-public class Cat {
+public class Cat extends Pet {
+    @Override
+    public void doAction() {
+        System.out.println("Кошка играет");
+    }
+
+    @Override
+    public void feed() {
+        System.out.println("Кошка ест влажный корм");
+    }
 }

@@ -1,4 +1,8 @@
 package org.example.oop.garden;
 
-public class Cactus {
+public class Cactus extends Plant {
+    @Override
+    public void care() {
+        System.out.println("Нуждается в засухе и свете");
+    }
 }

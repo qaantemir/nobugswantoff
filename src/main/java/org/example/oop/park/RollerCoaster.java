@@ -1,4 +1,10 @@
 package org.example.oop.park;
 
-public class RollerCoaster {
+import java.sql.SQLOutput;
+
+public class RollerCoaster extends Attraction {
+    @Override
+    public void care() {
+        System.out.println("Нужна проверка безопасности");
+    }
 }

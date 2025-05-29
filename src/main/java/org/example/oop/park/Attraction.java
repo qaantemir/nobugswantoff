@@ -1,4 +1,6 @@
 package org.example.oop.park;
 
-public class Attraction {
+public abstract class Attraction {
+
+    public abstract void care();
 }

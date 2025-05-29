@@ -1,4 +1,6 @@
 package org.example.oop.aqua;
 
-public class SeaAnimal {
+public abstract class SeaAnimal {
+
+    public abstract void move();
 }

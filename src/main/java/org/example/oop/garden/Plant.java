@@ -1,4 +1,5 @@
 package org.example.oop.garden;
 
-public class Plant {
+public abstract class Plant {
+    public abstract void care();
 }
