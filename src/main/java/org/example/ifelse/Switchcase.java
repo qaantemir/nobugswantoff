@@ -53,14 +53,14 @@ public class Switchcase {
         };
     }
 
-    static int math(int x, int y, String op) {
-        if (y == 0 && op.equals("/")) return -999999999;
+    static Integer math(int x, int y, String op) {
+        if (y == 0 && op.equals("/")) throw new ArithmeticException();
         return switch (op) {
             case "+" -> x + y;
             case "-" -> x - y;
             case "*" -> x * y;
             case "/" -> x / y;
-            default -> -99999999;
+            default -> null;
         };
     }
 
@@ -93,7 +93,9 @@ public class Switchcase {
             if (x % i == 0) isPrime = false;
         }
 
-        System.out.println(isPrime);
+        if (isPrime) System.out.println("Число положительное");
+        else System.out.println("Число отрицательное");
+
     }
 
     static void printNumbers() {
