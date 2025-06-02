@@ -27,6 +27,11 @@ public class Main {
         l.setBookTitle("Horror");
         l.setYear(1984);
 
+        System.out.println(l.getAuthor());
+        System.out.println(l.getBookTitle());
+        System.out.println(l.getCategory());
+        System.out.println(l.getYear());
+
         l.author = "Petya";
         l.year = 2000;
         l.category = "Comedy";
