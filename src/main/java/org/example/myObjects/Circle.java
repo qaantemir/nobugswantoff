@@ -4,7 +4,12 @@ public class Circle {
     private double radius;
 
     public Circle(double radius) {
-        this.radius = radius;
+        if (radius > 0) {
+            this.radius = radius;
+        }
+        else {
+            System.out.println("Нельзя определить отрицательным или нулевым значением");
+        }
     }
 
     public double getRadius() {
