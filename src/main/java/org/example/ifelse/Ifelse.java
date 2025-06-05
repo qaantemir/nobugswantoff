@@ -27,24 +27,17 @@ public class Ifelse {
     }
 
     static String checkSmth(int x) {
-        String result = "";
-        switch (x) {
-            case 1, 2: result = "Неудовлетворительно";
-            break;
-            case  3: result = "Удовлетворительно";
-            break;
-            case  4: result = "Хорошо";
-            break;
-            case 5: result = "Отлично";
-            break;
-        }
-
-        return result;
+        return switch (x) {
+            case 1, 2 -> "Неудовлетворительно";
+            case  3 -> "Удовлетворительно";
+            case 4 -> "Хорошо";
+            case 5 -> "Отлично";
+            default -> "Не известное значение";
+        };
     }
 
     static String checkOdd(int x) {
-        if (x % 2 == 0) return "Четное";
-        return "Нечетное";
+        return (x % 2 == 0) ? "Четное" : "Нечетное";
     }
 
     static double discount(int i) {

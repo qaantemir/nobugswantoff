@@ -22,7 +22,9 @@ public class StudentGroup {
     }
 
     public void setGroupCount(int groupCount) {
-        this.groupCount = groupCount;
+        if (groupCount >= 0) this.groupCount = groupCount;
+        else System.out.println("Нельзя установить количество меньше или равно нулю");
+
     }
 
     @Override

@@ -22,7 +22,7 @@ public class Product {
     }
 
     public void applyDiscount(int discount) {
-        this.price -= discount;
+        this.price = this.price - (this.price * discount);
     }
 
     @Override

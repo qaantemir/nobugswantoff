@@ -1,8 +1,8 @@
 package org.example.myStatics;
 
 public class MathConstants {
-    final double PI = 3.14159;
-    final double E = 2.71828;
+    final double PI = Math.PI;
+    final double E = Math.E;
 
     public static double calculateCircleArea(double r) {
         return 3.14 * (r * r);
